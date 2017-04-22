@@ -1,7 +1,0 @@
-cn/convenience/bean/ConvenienceBean.class
-cn/convenience/bean/Token.class
-cn/convenience/bean/UserOpenidBean.class
-cn/convenience/bean/WechatUserInfoBean.class
-cn/convenience/service/IConvenienceService.class
-cn/convenience/bean/UserRegInfo.class
-cn/convenience/bean/DeviceBean.class
