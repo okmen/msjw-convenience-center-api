@@ -25,7 +25,7 @@ public interface IConvenienceService {
 	 * @return BaseBean 返回类型 
 	 * @throws
 	 */
-	BaseBean equipmentDamageReport(ConvenienceBean convenienceBean);
+	BaseBean equipmentDamageReport(ConvenienceBean convenienceBean) throws Exception;
 	
 	/**
 	 * @Title: safeHiddenDanger 
@@ -35,7 +35,7 @@ public interface IConvenienceService {
 	 * @return BaseBean 返回类型 
 	 * @throws
 	 */
-	BaseBean safeHiddenDanger(ConvenienceBean convenienceBean);
+	BaseBean safeHiddenDanger(ConvenienceBean convenienceBean) throws Exception;
 	
 	/**
 	 * @Title: trafficCongestion 
@@ -45,7 +45,7 @@ public interface IConvenienceService {
 	 * @return BaseBean 返回类型 
 	 * @throws
 	 */
-	BaseBean trafficCongestion(ConvenienceBean convenienceBean);
+	BaseBean trafficCongestion(ConvenienceBean convenienceBean) throws Exception;
 	
 	/**
 	 * @Title: sequenceChaos 
@@ -55,7 +55,7 @@ public interface IConvenienceService {
 	 * @return BaseBean 返回类型 
 	 * @throws
 	 */
-	BaseBean sequenceChaos(ConvenienceBean convenienceBean);
+	BaseBean sequenceChaos(ConvenienceBean convenienceBean) throws Exception;
 	
 	/**
 	 * @Title: oneKeyDodgen 
@@ -65,6 +65,6 @@ public interface IConvenienceService {
 	 * @return BaseBean 返回类型 
 	 * @throws
 	 */
-	BaseBean oneKeyDodgen(ConvenienceBean convenienceBean);
+	BaseBean oneKeyDodgen(ConvenienceBean convenienceBean) throws Exception;
     
 }
