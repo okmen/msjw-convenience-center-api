@@ -1,5 +1,7 @@
 package cn.convenience.service;
 
+import java.util.List;
+
 import cn.convenience.bean.ConvenienceBean;
 import cn.convenience.bean.WechatUserInfoBean;
 import cn.sdk.bean.BaseBean;
@@ -67,4 +69,13 @@ public interface IConvenienceService {
 	 */
 	BaseBean oneKeyDodgen(ConvenienceBean convenienceBean) throws Exception;
     
+	/**
+	 * @Title: getAllResourcesAbsoluteUrl 
+	 * @Description: TODO(加载所有资源绝对路径) 
+	 * @param 无
+	 * @return List 返回类型 
+	 * @throws
+	 */
+	List getAllResourcesAbsoluteUrl() throws Exception;
+	
 }
