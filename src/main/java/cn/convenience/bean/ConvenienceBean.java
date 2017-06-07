@@ -244,4 +244,18 @@ public class ConvenienceBean implements Serializable{
 	public void setAbbreviation(String abbreviation) {
 		this.abbreviation = abbreviation;
 	}
+	@Override
+	public String toString() {
+		return "ConvenienceBean [userId=" + userId + ", userName=" + userName + ", mobilephone=" + mobilephone
+				+ ", identityCard=" + identityCard + ", reportingMatters=" + reportingMatters + ", detailAddress="
+				+ detailAddress + ", address=" + address + ", addressCode=" + addressCode + ", emergency=" + emergency
+				+ ", selectType=" + selectType + ", selectTypeId=" + selectTypeId + ", subType=" + subType
+				+ ", subTypeId=" + subTypeId + ", description=" + description + ", sceneImg=" + sceneImg
+				+ ", startTime=" + startTime + ", endTiem=" + endTiem + ", direction=" + direction + ", congestionCode="
+				+ congestionCode + ", congestionType=" + congestionType + ", congestionGrade=" + congestionGrade
+				+ ", roadServiceLevel=" + roadServiceLevel + ", congestionReason=" + congestionReason
+				+ ", improveAdvice=" + improveAdvice + ", numberPlate=" + numberPlate + ", abbreviation=" + abbreviation
+				+ ", carType=" + carType + ", doodgenAddress=" + doodgenAddress + ", addressRegion=" + addressRegion
+				+ ", addressStreet=" + addressStreet + ", addressSite=" + addressSite + ", ip=" + ip + "]";
+	}
 }
