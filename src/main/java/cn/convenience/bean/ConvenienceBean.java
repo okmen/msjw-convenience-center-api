@@ -50,6 +50,7 @@ public class ConvenienceBean implements Serializable{
 	private String addressStreet;	//地址-街道
 	private String addressSite;		//地址-站点
 	private String ip;			//ip地址
+	private String sourceOfCertification;		//来源
 	
 	
 	public String getAddressCode() {
@@ -244,6 +245,14 @@ public class ConvenienceBean implements Serializable{
 	public void setAbbreviation(String abbreviation) {
 		this.abbreviation = abbreviation;
 	}
+	
+	public String getSourceOfCertification() {
+		return sourceOfCertification;
+	}
+	public void setSourceOfCertification(String sourceOfCertification) {
+		this.sourceOfCertification = sourceOfCertification;
+	}
+	
 	@Override
 	public String toString() {
 		return "ConvenienceBean [userId=" + userId + ", userName=" + userName + ", mobilephone=" + mobilephone
@@ -256,6 +265,8 @@ public class ConvenienceBean implements Serializable{
 				+ ", roadServiceLevel=" + roadServiceLevel + ", congestionReason=" + congestionReason
 				+ ", improveAdvice=" + improveAdvice + ", numberPlate=" + numberPlate + ", abbreviation=" + abbreviation
 				+ ", carType=" + carType + ", doodgenAddress=" + doodgenAddress + ", addressRegion=" + addressRegion
-				+ ", addressStreet=" + addressStreet + ", addressSite=" + addressSite + ", ip=" + ip + "]";
+				+ ", addressStreet=" + addressStreet + ", addressSite=" + addressSite + ", ip=" + ip
+				+ ", sourceOfCertification=" + sourceOfCertification + "]";
 	}
+	
 }
