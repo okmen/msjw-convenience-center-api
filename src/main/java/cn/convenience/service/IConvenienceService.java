@@ -3,6 +3,7 @@ package cn.convenience.service;
 import java.util.List;
 
 import cn.convenience.bean.ConvenienceBean;
+import cn.convenience.bean.FeedbackResultBean;
 import cn.convenience.bean.WechatUserInfoBean;
 import cn.sdk.bean.BaseBean;
 
@@ -70,12 +71,19 @@ public interface IConvenienceService {
 	BaseBean oneKeyDodgen(ConvenienceBean convenienceBean) throws Exception;
     
 	/**
-	 * @Title: getAllResourcesAbsoluteUrl 
-	 * @Description: TODO(加载所有资源绝对路径) 
-	 * @param 无
-	 * @return List 返回类型 
+	 * @Title: historyNotice
+	 * @Description: TODO(历史通报)
+	 * @return List 返回类型
 	 * @throws
 	 */
-	List getAllResourcesAbsoluteUrl() throws Exception;
+	List<FeedbackResultBean> getAllResourcesAbsoluteUrl() throws Exception;
+	
+	/**
+	 * 根据档案编号查询电动车档案信息
+	 * @Description: TODO(根据档案编号查询电动车档案信息)
+	 * @param fileNo 档案编号
+	 * @throws Exception
+	 */
+	BaseBean getEbikeInfoByFileNo(String fileNo) throws Exception;
 	
 }
