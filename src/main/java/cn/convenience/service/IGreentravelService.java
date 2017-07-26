@@ -8,7 +8,11 @@ import cn.sdk.bean.BaseBean;
  *
  */
 public interface IGreentravelService {
-    
+    /**
+     * 获取域名
+     * @return
+     */
+	public String getTemplateSendUrl();
 	/**
 	 * 
 	 *  @Title: applyDownDate 
