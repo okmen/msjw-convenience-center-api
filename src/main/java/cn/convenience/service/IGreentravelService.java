@@ -46,5 +46,16 @@ public interface IGreentravelService {
 	 */
 	BaseBean applyrunningQuery(GreenTravelBean greenTravelBean)throws Exception;
 	
+	/**
+	 * 
+	 @Title: applyTotalQuery 
+	 * @Description: TODO(车辆停驶情况查询)
+	 * @param @param greenTravelBean
+	 * @param @return 设定文件 
+	 * @return BaseBean 返回类型 
+	 * @throws
+	 */
+	BaseBean applyTotalQuery(GreenTravelBean greenTravelBean)throws Exception;
+	
 
 }
