@@ -19,6 +19,7 @@ public class GreenTraveTemplateVo implements Serializable {
 	private String numberPlate;    //车牌号码
 	private String businessType; //具体业务类型,例如 绿色出行申请
 	private Integer reserveNumber;    //申请天数
+	private Integer cryearNo;         //年度累计申报天数
 	
 	public String getType() {
 		return type;
@@ -64,14 +65,23 @@ public class GreenTraveTemplateVo implements Serializable {
 	public void setReserveNumber(Integer reserveNumber) {
 		this.reserveNumber = reserveNumber;
 	}
+	
+	
+	public Integer getCryearNo() {
+		return cryearNo;
+	}
+	public void setCryearNo(Integer cryearNo) {
+		this.cryearNo = cryearNo;
+	}
 	public GreenTraveTemplateVo(){}
 	
 	
-	public GreenTraveTemplateVo(String type, String numberPlate, String businessType,Integer reserveNumber) {
+	public GreenTraveTemplateVo(String type, String numberPlate, String businessType,Integer reserveNumber,Integer cryearNo) {
 		this.type = type;
 		this.numberPlate = numberPlate;
 		this.businessType = businessType;
 		this.reserveNumber = reserveNumber;
+		this.cryearNo=cryearNo;
 	}
 	
 	public static String getUrl(GreenTraveTemplateVo greenTraveTemplateVo,String baseUrl) throws Exception{
