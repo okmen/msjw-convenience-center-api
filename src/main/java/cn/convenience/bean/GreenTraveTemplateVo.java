@@ -18,7 +18,7 @@ public class GreenTraveTemplateVo implements Serializable {
 	private String type;    //业务类型 1 办理类 2 预约类
 	private String numberPlate;    //车牌号码
 	private String businessType; //具体业务类型,例如 绿色出行申请
-	private Integer reserveNumber;    //申请天数
+	private String reserveNumber;    //申请天数
 	private Integer cryearNo;         //年度累计申报天数
 	
 	public String getType() {
@@ -55,14 +55,14 @@ public class GreenTraveTemplateVo implements Serializable {
 	}
 	
 	
-	public Integer getReserveNumber() {
+	public String getReserveNumber() {
 		return reserveNumber;
 	}
 	/**
 	 * 申请停驶天数
 	 * @param reserveNumber
 	 */
-	public void setReserveNumber(Integer reserveNumber) {
+	public void setReserveNumber(String reserveNumber) {
 		this.reserveNumber = reserveNumber;
 	}
 	
@@ -76,7 +76,7 @@ public class GreenTraveTemplateVo implements Serializable {
 	public GreenTraveTemplateVo(){}
 	
 	
-	public GreenTraveTemplateVo(String type, String numberPlate, String businessType,Integer reserveNumber,Integer cryearNo) {
+	public GreenTraveTemplateVo(String type, String numberPlate, String businessType,String reserveNumber,Integer cryearNo) {
 		this.type = type;
 		this.numberPlate = numberPlate;
 		this.businessType = businessType;
