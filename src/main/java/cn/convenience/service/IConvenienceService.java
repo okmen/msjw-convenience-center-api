@@ -16,7 +16,7 @@ public interface IConvenienceService {
      * 获取域名
      * @return
      */
-	public String getTemplateSendUrl();
+	public String getTemplateSendUrl2();
 	
 	/**
 	 * 插入微信用户信息
