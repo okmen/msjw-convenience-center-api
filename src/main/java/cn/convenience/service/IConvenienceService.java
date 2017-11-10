@@ -2,6 +2,7 @@ package cn.convenience.service;
 
 import java.util.List;
 
+import cn.convenience.bean.ApplyForPAGoodCarOwners;
 import cn.convenience.bean.ConvenienceBean;
 import cn.convenience.bean.FeedbackResultBean;
 import cn.convenience.bean.WechatUserInfoBean;
@@ -85,5 +86,12 @@ public interface IConvenienceService {
 	 * @throws Exception
 	 */
 	BaseBean getEbikeInfoByFileNo(String fileNo) throws Exception;
+	/**
+	 * 平安好车主评选
+	 * @param applyForPAGoodCarOwners
+	 * @return
+	 * @throws Exception
+	 */
+	BaseBean applyForPAGoodCarOwners(ApplyForPAGoodCarOwners applyForPAGoodCarOwners) throws Exception;
 	
 }
