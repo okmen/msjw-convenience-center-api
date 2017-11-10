@@ -12,7 +12,11 @@ import cn.sdk.bean.BaseBean;
  * @author suntao
  */
 public interface IConvenienceService {
-	
+	 /**
+     * 获取域名
+     * @return
+     */
+	public String getTemplateSendUrl();
 	
 	/**
 	 * 插入微信用户信息
