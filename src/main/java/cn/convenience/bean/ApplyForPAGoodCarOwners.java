@@ -10,7 +10,7 @@ public class ApplyForPAGoodCarOwners implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private String ownerName;//车主姓名
 	private String driverLicense;//驾驶证号码
-	private String LicenseNumber;//车牌号码
+	private String licenseNumber;//车牌号码
 	private String numberPlate;//车牌种类
 	private String mobile;//手机号
 	private String securityDeclaration;//安全宣言
@@ -34,11 +34,11 @@ public class ApplyForPAGoodCarOwners implements Serializable{
 	}
 
 	public String getLicenseNumber() {
-		return LicenseNumber;
+		return licenseNumber;
 	}
 
 	public void setLicenseNumber(String licenseNumber) {
-		LicenseNumber = licenseNumber;
+		this.licenseNumber = licenseNumber;
 	}
 
 	public String getNumberPlate() {
@@ -84,7 +84,7 @@ public class ApplyForPAGoodCarOwners implements Serializable{
 	@Override
 	public String toString() {
 		return "applyForPAGoodCarOwners [ownerName=" + ownerName + ", driverLicense=" + driverLicense
-				+ ", LicenseNumber=" + LicenseNumber + ", numberPlate=" + numberPlate + ", mobile=" + mobile
+				+ ", licenseNumber=" + licenseNumber + ", numberPlate=" + numberPlate + ", mobile=" + mobile
 				+ ", securityDeclaration=" + securityDeclaration + ", RZZP=" + RZZP + ", sourceOfCertification="
 				+ sourceOfCertification + "]";
 	}
