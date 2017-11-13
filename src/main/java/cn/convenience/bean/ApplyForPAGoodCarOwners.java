@@ -70,7 +70,7 @@ public class ApplyForPAGoodCarOwners implements Serializable{
 	}
 
 	public void setRZZP(String RZZP) {
-		RZZP = RZZP;
+		this.RZZP = RZZP;
 	}
 
 	public String getSourceOfCertification() {
