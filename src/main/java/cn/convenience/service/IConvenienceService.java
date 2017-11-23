@@ -2,6 +2,7 @@ package cn.convenience.service;
 
 import java.util.List;
 
+
 import cn.convenience.bean.ActivityVote;
 import cn.convenience.bean.ActivityVoteRecord;
 import cn.convenience.bean.ApplyForPAGoodCarOwners;
@@ -105,54 +106,24 @@ public interface IConvenienceService {
 	 * @return
 	 */
 	int deleteById(Integer id) throws Exception;
-	/**
-	 * 录入投票人信息
-	 * @param record
-	 * @return
-	 */
+
     int insert(ActivityVote record) throws Exception;
-    /**
-    * 根据id获取投票人信息
-    * @param id
-    * @return
-    */
+
     ActivityVote selectById(Integer id) throws Exception;
-    /**
-     * 获取投票人信息
-     * @return
-     */
+
     List<ActivityVote> getVoteByPage(Integer page ,Integer pageSize) throws Exception;
-    /**
-     * 投票
-     * @param record
-     * @return
-     */
-    int updateById(ActivityVote record) throws Exception;
-    /**
-     * 查询总记录数
-     * @return
-     */
+
+    int updateById(int id) throws Exception;
+    
     int queryCount() throws Exception;
-    /**
-     * 获取前total位排名入选人信息
-     * @param total
-     * @return
-     * @throws Exception
-     */
+    
     List<ActivityVote> getFrontVote(Integer total) throws Exception;
-    /**
-     * 查询总票数
-     * @return
-     * @throws Exception
-     */
+    
     int queryCountSum() throws Exception;
-    /**
-     * 根据名字查询
-     * @param name
-     * @return
-     * @throws Exception
-     */
-    List<ActivityVote> selectByName(String name,int page ,int pageSize) throws Exception;
+    
+    ActivityVote selectByName(String name) throws Exception;
+    
+    int selectRank(int count)throws Exception;
     public void setKey(String key, int seconds);
 	public boolean exists(String key);
 	
