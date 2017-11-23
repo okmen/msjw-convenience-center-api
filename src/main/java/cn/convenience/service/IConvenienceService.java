@@ -152,7 +152,7 @@ public interface IConvenienceService {
      * @return
      * @throws Exception
      */
-    List<ActivityVote> selectByName(String name) throws Exception;
+    List<ActivityVote> selectByName(String name,int page ,int pageSize) throws Exception;
     public void setKey(String key, int seconds);
 	public boolean exists(String key);
 	
