@@ -140,7 +140,19 @@ public interface IConvenienceService {
      * @throws Exception
      */
     List<ActivityVote> getFrontVote(Integer total) throws Exception;
+    /**
+     * 查询总票数
+     * @return
+     * @throws Exception
+     */
     int queryCountSum() throws Exception;
+    /**
+     * 根据名字查询
+     * @param name
+     * @return
+     * @throws Exception
+     */
+    List<ActivityVote> selectByName(String name) throws Exception;
     public void setKey(String key, int seconds);
 	public boolean exists(String key);
 	
