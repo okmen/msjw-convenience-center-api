@@ -140,7 +140,7 @@ public interface IConvenienceService {
      * @throws Exception
      */
     List<ActivityVote> getFrontVote(Integer total) throws Exception;
-    
+    int queryCountSum() throws Exception;
     public void setKey(String key, int seconds);
 	public boolean exists(String key);
 	
