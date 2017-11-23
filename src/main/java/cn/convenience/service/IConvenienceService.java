@@ -149,4 +149,7 @@ public interface IConvenienceService {
 	 * @return
 	 */
 	int addVoteRecord(ActivityVoteRecord record);
+	
+	public void setFront15(Object list);
+	public Object getFront15();
 }
