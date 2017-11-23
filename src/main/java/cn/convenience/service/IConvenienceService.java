@@ -3,6 +3,7 @@ package cn.convenience.service;
 import java.util.List;
 
 import cn.convenience.bean.ActivityVote;
+import cn.convenience.bean.ActivityVoteRecord;
 import cn.convenience.bean.ApplyForPAGoodCarOwners;
 import cn.convenience.bean.ConvenienceBean;
 import cn.convenience.bean.FeedbackResultBean;
@@ -143,4 +144,26 @@ public interface IConvenienceService {
     public void setKey(String key, int seconds);
 	public boolean exists(String key);
 	
+	/**
+	 * （微信）进入平安好车主投票页面流览量统计
+	 * @throws Exception
+	 */
+	void GoodCarOwnerWechat() throws Exception;
+	/**
+	 * （支付宝）进入平安好车主投票页面流览量统计
+	 * @throws Exception
+	 */
+	void GoodCarOwnerAlipay() throws Exception;
+	/**
+	 * （平安）进入平安好车主投票页面流览量统计
+	 * @throws Exception
+	 */
+	void GoodCarOwnerPingan() throws Exception;
+	
+	/**
+	 * 写入投票记录
+	 * @param record
+	 * @return
+	 */
+	int addVoteRecord(ActivityVoteRecord record);
 }
