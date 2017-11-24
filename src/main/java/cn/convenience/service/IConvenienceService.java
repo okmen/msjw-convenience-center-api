@@ -121,7 +121,7 @@ public interface IConvenienceService {
     
     int queryCountSum() throws Exception;
     
-    ActivityVote selectByName(String name) throws Exception;
+    List<ActivityVote> selectByName(String name) throws Exception;
     
     int selectRank(int count)throws Exception;
     public void setKey(String key, int seconds);
