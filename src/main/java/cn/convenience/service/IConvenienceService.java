@@ -131,17 +131,17 @@ public interface IConvenienceService {
 	 * （微信）进入平安好车主投票页面流览量统计
 	 * @throws Exception
 	 */
-	void GoodCarOwnerWechat() throws Exception;
+	void goodCarOwnerWechat() throws Exception;
 	/**
 	 * （支付宝）进入平安好车主投票页面流览量统计
 	 * @throws Exception
 	 */
-	void GoodCarOwnerAlipay() throws Exception;
+	void goodCarOwnerAlipay() throws Exception;
 	/**
 	 * （平安）进入平安好车主投票页面流览量统计
 	 * @throws Exception
 	 */
-	void GoodCarOwnerPingan() throws Exception;
+	void goodCarOwnerPingan() throws Exception;
 	
 	/**
 	 * 写入投票记录
