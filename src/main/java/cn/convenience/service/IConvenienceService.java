@@ -153,13 +153,4 @@ public interface IConvenienceService {
 	public void setFront15(Object list);
 	public Object getFront15();
 	
-	
-	/**
-	 * 民生警务个人信息
-	 * @param identityCard 身份证
-	 * @param sourceOfCertification 认证来源
-	 * @return
-	 * @throws Exception
-	 */
-	public BaseBean getMSJWinfo(String identityCard, String sourceOfCertification)throws Exception;
 }
