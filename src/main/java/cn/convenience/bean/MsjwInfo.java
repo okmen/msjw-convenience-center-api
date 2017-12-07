@@ -8,7 +8,7 @@ import java.util.List;
  * @author Mbenben
  *
  */
-public class MSJWinfo implements Serializable {
+public class MsjwInfo implements Serializable {
 
 	/**
 	 * 

@@ -26,5 +26,21 @@ public interface IMsjwService {
 	 * @param identityCard 身份证号
 	 * @return
 	 */
-	public JSONObject checkIsValidUser(String openId, String identityCard);
+	public JSONObject checkIsValidUser(String openId, String identityCard)throws Exception;
+	
+	/**
+	 * 发送模板消息到民生警务平台
+	 * @param params 模板消息内容json格式字符串
+	 * @return
+	 * @throws Exception
+	 */
+	public JSONObject sendTemplateMsg2Msjw(String params)throws Exception;
+	
+	/**
+	 * 查询消息推送结果
+	 * @param msgId 微信消息id
+	 * @return
+	 * @throws Exception
+	 */
+	public JSONObject queryTemplateMsgSendResult(String msgId)throws Exception;
 }
