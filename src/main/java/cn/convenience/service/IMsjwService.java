@@ -21,12 +21,11 @@ public interface IMsjwService {
 	public BaseBean getMSJWinfo(String identityCard, String sourceOfCertification)throws Exception;
 	
 	/**
-	 * 校验是否为民生警务平台合法用户
+	 * 根据openid获取民生警务平台用户信息
 	 * @param openId 民生警务平台公众号openId
-	 * @param identityCard 身份证号
 	 * @return
 	 */
-	public JSONObject checkIsValidUser(String openId, String identityCard)throws Exception;
+	public JSONObject getUserInfoFromMsjw(String openId)throws Exception;
 	
 	/**
 	 * 发送模板消息到民生警务平台
