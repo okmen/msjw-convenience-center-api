@@ -1,7 +1,11 @@
 package cn.convenience.service;
 
+import java.util.List;
+
 import com.alibaba.fastjson.JSONObject;
 
+import cn.convenience.bean.MsjwApplyingBusinessVo;
+import cn.convenience.bean.MsjwApplyingRecordVo;
 import cn.sdk.bean.BaseBean;
 
 /**
@@ -42,4 +46,62 @@ public interface IMsjwService {
 	 * @throws Exception
 	 */
 	public JSONObject queryTemplateMsgSendResult(String msgId)throws Exception;
+	
+	/**
+	 * 新增在办业务到民生警务平台
+	 * @param vo
+	 * @return
+	 * @throws Exception
+	 */
+	public JSONObject addApplyingBusiness(MsjwApplyingBusinessVo vo)throws Exception;
+	
+	/**
+	 * 修改在办业务到民生警务平台
+	 * @param vo
+	 * @return
+	 * @throws Exception
+	 */
+	public JSONObject updateApplyingBusiness(MsjwApplyingBusinessVo vo)throws Exception;
+	
+	/**
+	 * 删除在办业务到民生警务平台
+	 * @param vo
+	 * @return
+	 * @throws Exception
+	 */
+	public JSONObject deleteApplyingBusiness(String tylsbh)throws Exception;
+	
+	/**
+	 * 修改状态
+	 * @param msjwApplyingRecordVo
+	 * @return
+	 */
+	int updateMsjwApplyingRecordById(MsjwApplyingRecordVo msjwApplyingRecordVo);
+	
+	/**
+	 * 删除业务
+	 * @param id
+	 * @return
+	 */
+	int deleteMsjwApplyingRecordById(Integer id);
+	
+	/**
+	 * 查询所有不同身份证号
+	 * @return
+	 */
+	List<String> selectIdentityIdAll();
+	
+	/**
+	 * 根据流水号查询
+	 * @param tylsbh 流水号
+	 * @return
+	 */
+	MsjwApplyingRecordVo selectMsjwApplyingRecordByTylsbh(String tylsbh);
+	
+	/**
+	 * 写入到已完结表中
+	 * @param msjwApplyingRecordVo
+	 * @return
+	 */
+	int addMsjwFinishedRecord(MsjwApplyingRecordVo msjwApplyingRecordVo);
 }
