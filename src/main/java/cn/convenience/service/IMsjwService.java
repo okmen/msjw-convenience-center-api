@@ -76,32 +76,32 @@ public interface IMsjwService {
 	 * @param msjwApplyingRecordVo
 	 * @return
 	 */
-	int updateMsjwApplyingRecordById(MsjwApplyingRecordVo msjwApplyingRecordVo);
+	int updateMsjwApplyingRecordById(MsjwApplyingRecordVo msjwApplyingRecordVo)throws Exception;
 	
 	/**
 	 * 删除业务
 	 * @param id
 	 * @return
 	 */
-	int deleteMsjwApplyingRecordById(Integer id);
+	int deleteMsjwApplyingRecordById(Integer id)throws Exception;
 	
 	/**
 	 * 查询所有不同身份证号
 	 * @return
 	 */
-	List<String> selectIdentityIdAll();
+	List<String> selectIdentityIdAll()throws Exception;
 	
 	/**
 	 * 根据流水号查询
 	 * @param tylsbh 流水号
 	 * @return
 	 */
-	MsjwApplyingRecordVo selectMsjwApplyingRecordByTylsbh(String tylsbh);
+	MsjwApplyingRecordVo selectMsjwApplyingRecordByTylsbh(String tylsbh)throws Exception;
 	
 	/**
 	 * 写入到已完结表中
 	 * @param msjwApplyingRecordVo
 	 * @return
 	 */
-	int addMsjwFinishedRecord(MsjwApplyingRecordVo msjwApplyingRecordVo);
+	int addMsjwFinishedRecord(MsjwApplyingRecordVo msjwApplyingRecordVo)throws Exception;
 }
