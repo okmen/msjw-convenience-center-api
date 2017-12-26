@@ -6,6 +6,7 @@ import com.alibaba.fastjson.JSONObject;
 
 import cn.convenience.bean.MsjwApplyingBusinessVo;
 import cn.convenience.bean.MsjwApplyingRecordVo;
+import cn.convenience.bean.MsjwVehicleInspectionVo;
 import cn.sdk.bean.BaseBean;
 
 /**
@@ -104,4 +105,42 @@ public interface IMsjwService {
 	 * @return
 	 */
 	int addMsjwFinishedRecord(MsjwApplyingRecordVo msjwApplyingRecordVo)throws Exception;
+	
+	/**
+	 * 新增记录
+	 * @param vo
+	 * @return
+	 */
+	int addMsjwVehicleInspection(MsjwVehicleInspectionVo vo);
+	
+	/**
+	 * 查询审核状态为0-待审核记录
+	 * @param page
+	 * @param pageSize
+	 * @return
+	 */
+	List<MsjwVehicleInspectionVo> selectMsjwVehicleInspectionStatusZero(Integer page, Integer pageSize);
+	
+	/**
+	 * 根据tylsbh和platNumber更新数据库状态
+	 * @param vo
+	 * @return
+	 */
+	int updateMsjwVehicleInspection(MsjwVehicleInspectionVo vo);
+	
+	/**
+	 * 根据tylsbh和platNumber删除记录
+	 * @param tylsbh
+	 * @param platNumber
+	 * @return
+	 */
+	int deleteMsjwVehicleInspection(String tylsbh, String platNumber);
+
+	/**
+	 * 新增在办业务到民生警务平台(六年免检)
+	 * @param vo
+	 * @return
+	 * @throws Exception
+	 */
+	public JSONObject addVehicleInspectionBusiness(MsjwVehicleInspectionVo vo)throws Exception;
 }
