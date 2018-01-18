@@ -55,6 +55,13 @@ public interface IMsjwService {
 	 * @throws Exception
 	 */
 	public JSONObject addApplyingBusiness(MsjwApplyingBusinessVo vo)throws Exception;
+	/**
+	 * 新增在办业务到民生警务平台
+	 * @param vo
+	 * @return
+	 * @throws Exception
+	 */
+	public JSONObject addCarMortgageBusiness(MsjwApplyingBusinessVo vo)throws Exception;
 	
 	/**
 	 * 修改在办业务到民生警务平台
