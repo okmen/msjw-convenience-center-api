@@ -8,6 +8,8 @@ import cn.convenience.bean.ActivityVoteRecord;
 import cn.convenience.bean.ApplyForPAGoodCarOwners;
 import cn.convenience.bean.ConvenienceBean;
 import cn.convenience.bean.FeedbackResultBean;
+import cn.convenience.bean.SzjjVote;
+import cn.convenience.bean.SzjjVoteRecord;
 import cn.convenience.bean.WechatUserInfoBean;
 import cn.sdk.bean.BaseBean;
 
@@ -153,4 +155,15 @@ public interface IConvenienceService {
 	public void setFront15(Object list);
 	public Object getFront15();
 	
+	public int updateBySzjjId(String [] voteIds)  throws Exception;
+	
+	public List<SzjjVote> getAllVote() throws Exception;
+	
+	public int addSzjjVoteRecord(SzjjVoteRecord record) throws Exception;
+	
+	public void setSzjjVoteKey(String key,int voteCount,int seconds) throws Exception;
+	
+	public boolean existsSzjjVoteKey(String key);
+	
+	public int getSzjjVote(String key);
 }
