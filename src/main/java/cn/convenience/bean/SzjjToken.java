@@ -1,9 +1,15 @@
 package cn.convenience.bean;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class SzjjToken {
-    //id
+public class SzjjToken implements Serializable{
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	//id
     private Integer id;
 
     private String name;
